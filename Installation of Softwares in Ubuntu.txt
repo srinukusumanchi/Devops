@@ -1,0 +1,30 @@
+switches to root user
+--- sudo -i
+
+Update all the packages which needs to get update
+--- sudo apt-get update
+
+Install Java 8
+--- sudo apt-get install openjdk-8-jdk
+
+Install Maven
+--- sudo apt-get install maven
+
+
+Install GIT
+--- sudo apt-get install git
+
+Install Jenkins
+--- wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+Check Jenkins Service is running or not
+
+--- service jenkins status
+
+Starts Jenkins service
+
+--- service jenkins start
