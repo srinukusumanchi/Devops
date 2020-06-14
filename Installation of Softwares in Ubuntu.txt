@@ -28,3 +28,12 @@ Check Jenkins Service is running or not
 Starts Jenkins service
 
 --- service jenkins start
+
+Install Jfrog
+
+wget -qO - https://api.bintray.com/orgs/jfrog/keys/gpg/public.key | apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://jfrog.bintray.com/artifactory-debs $(lsb_release -cs) main"
+
+sudo apt update
+sudo apt install jfrog-artifactory-oss
+systemctl start artifactory.service

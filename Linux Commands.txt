@@ -1,0 +1,8 @@
+Linux Basic commands
+
+Rename file name
+* Go to the particular file location and use below command
+mv <file Original name> <new file name>
+
+Unzip a file
+unzip <file name>
